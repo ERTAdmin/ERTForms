@@ -1,0 +1,33 @@
+# Description du projet
+name: ertforms
+description: "ERT Smart"
+
+# Cette ligne empêche de publier l'application publiquement
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# Définition de l'environnement de travail
+version: 1.0.0+1
+environment:
+  sdk: ^3.8.1
+
+# Ajout des dépendances
+dependencies:
+  flutter:
+    sdk: flutter
+  # Ajout des Cupertino Icons (pour IOS ne pas enlever)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+
+# Flutter package project
+flutter:
+  # Ajout de Material Icons
+  uses-material-design: true
+
+  # Ajout des assets necessaire au projet
+  assets:
+    - assets/logo.png
