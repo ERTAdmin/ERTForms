@@ -2,7 +2,6 @@
 // Cette page a pour but de ce connecter à l'application.
 
 import 'package:flutter/material.dart';
-import 'accueil.dart';
 import 'session_manager.dart';
 
 class LoginPage extends StatelessWidget {

@@ -1,6 +1,5 @@
-// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'login.dart';
 import 'session_manager.dart';
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
