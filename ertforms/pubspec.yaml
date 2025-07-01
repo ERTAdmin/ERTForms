@@ -16,11 +16,11 @@ dependencies:
     sdk: flutter
   # Ajout des Cupertino Icons (pour IOS ne pas enlever)
   cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
 
 
 # Flutter package project

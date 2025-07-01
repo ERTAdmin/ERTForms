@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'accueil.dart';
+import 'session_manager.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController identifiantController = TextEditingController();
@@ -45,12 +46,10 @@ class LoginPage extends StatelessWidget {
 
               // Bouton Connexion
               ElevatedButton(
-                onPressed: () {
-                  // Ici tu peux ajouter une vérification
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AccueilPage()),
-                  );
+                onPressed: () async {
+                  // Connexion réussie (à améliorer plus tard)
+                  await SessionManager.setLoggedIn(true);
+                  Navigator.pushNamedAndRemoveUntil(context, '/accueil', (route) => false);
                 },
                 child: Text('Se connecter'),
               ),
